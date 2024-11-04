@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta property="og:title" content="Kingfisher Trail">
+  <title>Kingfisher Trail</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @font-face {
+        font-family: 'Optima';
+        src: url('./landingassets/optima-regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+    html,body{
+      margin: 0;padding:0;
+      font-size: calc(5px + 2vmin);
+      font-family: 'Optima',sans-serif;
+      color:#DFDCD4;
+      text-align: center;
+    }
+    #main{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background:url(./landingassets/bg.webp) no-repeat 15% 50%/ cover;
+      width:100vw;
+      height: calc(100vh - 11vh* 2);
+      padding: 11vh 0;
+    }
+    #logo,#text,#icon{width:20vh;min-width:70%;height:10vh;transition: 0.3s all;}
+    #logo{background:url(./landingassets/logo.svg) no-repeat 50% 50%/ contain;margin-top: 7vh;}
+    #text{height:auto;text-transform: uppercase;letter-spacing:0.2em;font-size: 1.55em;}
+    #icon{background:url(./landingassets/icon.svg) no-repeat 50% 50%/ contain;}
+
+    @media (orientation: portrait) {
+      #logo{margin-top: 11vh;}
+      #text{margin-bottom: 10vh;}
+      #icon{height: 8vh;}
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div id="logo"></div>
+    <div id="text">Coming Soon</div>
+    <div id="icon"></div>
+  </div>
+</body>
+</html>
